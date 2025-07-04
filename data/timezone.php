@@ -14,16 +14,19 @@
 <body>
 
 <?php
-    // Data atual
-    $dataatual = date("d/m/Y");
-    echo $dataatual;
+    // Configurando o Timezone
+    echo "Timezone configurado: " . date_default_timezone_get();
+    echo "<br>";
+    echo "A hora atual do servidor é " . date("h:i:s");
+
     echo "<br>";
     echo "<br>";
 
-    // Hora atual sem segundos
-    $horaatual = date("H:i");
-    echo $horaatual;
-
+    // Configurando um novo Timezone
+    date_default_timezone_set("Europe/Madrid");
+    echo "Novo Timezone foi ajustado: " . date_default_timezone_get();
+    echo "<br>";
+    echo "A hora atual é agora: " . date("h:i:s");
 ?>
 
 </body>
