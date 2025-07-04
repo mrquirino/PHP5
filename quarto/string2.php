@@ -46,6 +46,14 @@
     // Exemplo da função str_pad (preenche a String com um conjunto de caracteres a direita)
     $codigo = "Celular";
     echo str_pad($codigo, 20,"-", STR_PAD_RIGHT);
+    echo "<br>";
+    echo "<br>";
+
+    // Exemplo da função str_pad (preenche a String com um conjunto de caractres)
+    $codigo = 10;
+    $produto = "Revista Clube Mais - Assinatura Anual";
+    echo str_pad($codigo, 5, "0", STR_PAD_LEFT) . " - $produto";
+
 ?>
 
 </body>
